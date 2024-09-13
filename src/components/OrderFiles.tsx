@@ -7,8 +7,7 @@ export function OrderFiles({order}: { order: InscribeOrderData }) {
     const {network} = useUnisat();
 
     function getLink(inscriptionId: string) {
-        return `https://${network === NetworkType.testnet ? 'testnet.' : ''}unisat.io/inscription/${inscriptionId}`
-
+        return `https://explorer.unisat.io/${network === NetworkType.testnet ? 'fractal-testnet' : 'fractal-mainnet'}/inscription/${inscriptionId}`
     }
 
     return <>
