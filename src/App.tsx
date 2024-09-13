@@ -44,7 +44,6 @@ function App() {
                                 apiKey
                                     ? <>
                                         <Inscribe newOrder$={newOrder$}/>
-                                        <OrderList newOrder$={newOrder$}/>
                                     </>
                                     : <>
                                         <Typography.Title>

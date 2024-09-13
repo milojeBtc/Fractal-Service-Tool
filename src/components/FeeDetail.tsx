@@ -49,8 +49,6 @@ export function FeeDetail({
     const truncatedTotal = Math.floor((total) / 1000) * 1000; // truncate
     const amount = truncatedTotal + devFee; // add devFee at the end
 
-    console.log("The final amount need to pay: ",amount)
-
     return <>
         <SimpleRow
             label={'Network Fee:'}
